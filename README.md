@@ -43,5 +43,5 @@ It displays users' score for the guessing experiment.
 References
 =========
 ===== face imgs ===== 
-
+All face imgs are downloaded from this URL:
 http://www.openu.ac.il/home/hassner/Adience/data.html#agegender
