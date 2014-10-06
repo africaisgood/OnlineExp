@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Baby face exp.</title>
+    <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet'>
+    <link href='/static/css/app.css' rel='stylesheet'>
+  </head>  
+
+  <body>
+    <h1>Take a guess! {{ img_name }}</h1>
+    <center><img src="/static/img/{{ img_name }}" alt="baby face" width="500px" ></center>
+    <form action="/API/answer/"> 
+      <input type="radio" name="topping" value="male">male</input>
+      <input type="radio" name="topping" value="female">female</input>
+      <p><span id="submit-btn" class='submit'>Next Guess</span></p>
+    </form>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    // function printResult() {
+    //   console.log('clicked');
+    // }
+    // $('#submit-btn').click(printResult);
+
+    $('#submit-btn').click(function(){
+        result = $("form input[type='radio']:checked").val();
+        if (typeof result === 'undefined') {
+          alert('Please choose a option');
+        } else {
+          $.post("/API/answer/", {'answer': result},function(data) {
+              console.log(data);
+              if (data.status == 'success'){
+                window.location.reload();
+              } else {
+                alert(data.error);
+              }
+          });
+          console.log(result);
+        }
+    });
+    
+    </script>
+  </body>
+
+  
+</html>

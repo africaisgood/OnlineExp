@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<title>Start baby face exp.!</title>
+
+	<style type="text/css">    
+		body
+		{
+			background-color:#000;
+		}
+
+		h1
+		{
+			text-align:center;
+			font-size:40px;
+			margin-top:2;
+			font-family:Arial, sans-serif;
+			text-shadow:2px 0 15px #292929;
+			letter-spacing:4px;
+			text-decoration:none;
+			color:#DDD;
+		}
+
+		form
+		{
+			line-height: 3;
+			font-size: 36px;
+			text-align: center;
+			word-spacing: 3em;
+			color: white; 
+		}
+		.userid
+		{
+			line-height: 3;
+			font-size: 20px;
+			text-align: center; 			
+		}
+
+		.submit
+		{
+			line-height: 2;
+			font-size: 20px;
+			text-align: center;        
+		}
+	</style>
+
+	<body>
+		<h1>Welcome!</h1>
+	</body>
+
+	<form action="hello.html" method="post">	
+		<p>Your ID:</p>
+		<p><input class='userid' type="text" name="name" value="Your ID"></p>
+		<p><input class="submit" type="submit" value="START!"></p>
+	</form>
+
+</html>

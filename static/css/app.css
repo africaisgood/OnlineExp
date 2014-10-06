@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align:center;
+  font-size:40px;
+  margin-top:2;
+  font-family:Arial, sans-serif;
+  text-shadow:2px 0 15px #292929;
+  letter-spacing:4px;
+  text-decoration:none;
+  color:#DDD;
+}
+
+img{
+  width:500px;
+  height:500px;
+}
+
+form {
+ line-height: 3;
+ font-size: 26px;
+ text-align: center;
+ word-spacing: 5em;
+ color: white; 
+}
+
+.submit {
+ display: inline-block;
+ line-height: 1.2em;
+ font-size: 24px;
+ text-align: center;
+ width: 150px;
+ background-color: white;
+ color: black; 
+ cursor: pointer; 
+}
